@@ -28,7 +28,7 @@ wget -P /tmp https://github.com/denilsonbonatti/linux-site-dio/archive/refs/head
 
 #Descompacta a aplicação
 echo 'Descompactando a aplicação...'
-unzip /tmp/main.zip
+unzip /tmp/main.zip -d /tmp/
 
 #Apaga arquivos na raíz do Apache
 echo 'Limpando diretório raíz do Apache'
