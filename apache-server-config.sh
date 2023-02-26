@@ -12,15 +12,15 @@ apt upgrade -y
 
 #Instala o servidor apache2
 echo 'Instalando o servidor Apache2...'
-apt install apache2
+apt install apache2 -y
 echo 'Habilitando o serviço Apache2 para iniciar junto com o servidor...'
 systemctl enable apache2
-echo 'Garantindo que o serviço do apache2 está no rodando...'
+echo 'Garantindo que o serviço do apache2 está rodando...'
 systemctl start apache2
 
 #Instala o unzip
 echo 'Instalando descompactador de arquivos unzip...'
-apt install unzip
+apt install unzip -y
 
 #Baixa a aplicação em repositório do GitHub
 echo 'Baixando aplicação do Github...'
@@ -36,6 +36,6 @@ rm -rf /var/www/html/*
 
 #Copia a aplicação para a pasta raíz do Apache
 echo 'Copiando a aplicação para a pasta raíz do Apache'
-cp -r -v /tmp /var/www/html
+cp -r -v /tmp/linux-site-dio-main/* /var/www/html/
 
 echo 'Instalação da aplicação concluída!!'
