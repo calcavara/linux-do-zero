@@ -13,7 +13,7 @@ groupadd GRP_SEC
 #Troca de propriedade dos diretórios criados
 chown root /publico
 chown root:GRP_ADM /adm
-chwon root:GRP_VEN /ven
+chown root:GRP_VEN /ven
 chown root:GRP_SEC /sec
 
 #Altera permissões de acesso às pastas
